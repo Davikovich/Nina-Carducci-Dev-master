@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Nina Carducci – Photographe professionnelle</title>
+    <meta
+      name="description"
+      content="Photographe professionnelle à Paris, Nina Carducci propose des services de portrait, mariage, entreprise et événement. Découvrez son portfolio."
+    />
 
+    <!-- FACEBOOK / LINKEDIN -->
     <meta
       property="og:title"
       content="Nina Carducci – Photographe professionnelle à Paris"
     />
+
     <meta
       property="og:description"
       content="Découvrez le portfolio de Nina Carducci, spécialisée en portraits, mariages, événements et entreprises à Paris."
     />
-    <meta property="og:image" content="./assets/images/nina.webp" />
+
+    <meta
+      property="og:image"
+      content="https://nina-carducci.github.io/assets/images/nina.webp"
+    />
     <meta property="og:url" content="https://nina-carducci.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Nina Carducci" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- TWITTER -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci – Photographe à Bordeaux"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez le portfolio de Nina Carducci, spécialisée en portraits, mariages et événements à Bordeaux."
+    />
+    <meta
+      name="twitter:image"
+      content="https://nina-carducci.github.io/assets/images/nina.webp"
+    />
+    <meta name="twitter:site" content="https://nina-carducci.github.io/" />
 
     <!-- Préchargement des polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,8 +59,14 @@
       onload="this.media='all'"
     />
 
+    <!-- Meta robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
     <!-- Feuilles de styles -->
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
 
     <!-- Image principale du carrousel (LCP) -->
@@ -42,6 +78,27 @@
 
     <!-- Portrait de Nina (section #about) -->
     <link rel="preload" as="image" href="./assets/images/nina.webp" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci – Photographe professionnelle",
+        "image": "https://nina-carducci.github.io/assets/images/nina.webp",
+        "url": "https://nina-carducci.github.io",
+        "telephone": "+33556677889",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "priceRange": "€€",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+      }
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -369,7 +426,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
   </body>
 </html>
